@@ -23,7 +23,44 @@ class _FormScreenState extends State<FormScreen> {
         child: Form(
           child: Column(
             children: [
-              Text("ชื่อ",style: TextStyle(fontSize: 20),)
+              Text(
+                "ชื่อ",
+                style: TextStyle(fontSize: 20),
+              ),
+              TextFormField(),
+              SizedBox(
+                height: 15,
+              ),
+              Text(
+                "นามสกุล",
+                style: TextStyle(fontSize: 20),
+              ),
+              TextFormField(),
+              SizedBox(
+                height: 15,
+              ),
+              Text(
+                "Email",
+                style: TextStyle(fontSize: 20),
+              ),
+              TextFormField(),
+              SizedBox(
+                height: 15,
+              ),
+              Text(
+                "คะแนน",
+                style: TextStyle(fontSize: 20),
+              ),
+              TextFormField(),
+              SizedBox(
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    "บันทึก",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
