@@ -21,47 +21,52 @@ class _FormScreenState extends State<FormScreen> {
       body: Container(
         padding: EdgeInsets.all(20),
         child: Form(
-          child: Column(
-            children: [
-              Text(
-                "ชื่อ",
-                style: TextStyle(fontSize: 20),
-              ),
-              TextFormField(),
-              SizedBox(
-                height: 15,
-              ),
-              Text(
-                "นามสกุล",
-                style: TextStyle(fontSize: 20),
-              ),
-              TextFormField(),
-              SizedBox(
-                height: 15,
-              ),
-              Text(
-                "Email",
-                style: TextStyle(fontSize: 20),
-              ),
-              TextFormField(),
-              SizedBox(
-                height: 15,
-              ),
-              Text(
-                "คะแนน",
-                style: TextStyle(fontSize: 20),
-              ),
-              TextFormField(),
-              SizedBox(
-                child: ElevatedButton(
-                  onPressed: () {},
-                  child: Text(
-                    "บันทึก",
-                    style: TextStyle(fontSize: 20),
+          child: SingleChildScrollView(
+            child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "ชื่อ",
+                  style: TextStyle(fontSize: 15),
+                ),
+                TextFormField(),
+                SizedBox(
+                  height: 15,
+                ),
+                Text(
+                  "นามสกุล",
+                  style: TextStyle(fontSize: 15),
+                ),
+                TextFormField(),
+                SizedBox(
+                  height: 15,
+                ),
+                Text(
+                  "Email",
+                  style: TextStyle(fontSize: 15),
+                ),
+                TextFormField(),
+                SizedBox(
+                  height: 15,
+                ),
+                Text(
+                  "คะแนน",
+                  style: TextStyle(fontSize: 15),
+                ),
+                TextFormField(),
+                SizedBox(
+                  width: 90,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: Text(
+                      "บันทึก",
+                      style: TextStyle(fontSize: 15),
+                      
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
