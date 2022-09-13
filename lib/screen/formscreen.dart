@@ -16,7 +16,17 @@ class _FormScreenState extends State<FormScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text("แบบฟอร์ม"),
-         backgroundColor: Color.fromARGB(255, 233, 95, 141),
+        backgroundColor: Color.fromARGB(255, 233, 95, 141),
+      ),
+      body: Container(
+        padding: EdgeInsets.all(20),
+        child: Form(
+          child: Column(
+            children: [
+              Text("ชื่อ",style: TextStyle(fontSize: 20),)
+            ],
+          ),
+        ),
       ),
     );
   }
