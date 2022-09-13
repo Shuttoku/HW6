@@ -14,8 +14,10 @@ class _FormScreenState extends State<FormScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("แบบฟอร์ม"),),
+      appBar: AppBar(
+        title: Text("แบบฟอร์ม"),
+         backgroundColor: Color.fromARGB(255, 233, 95, 141),
+      ),
     );
-    
   }
 }

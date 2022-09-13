@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_firebase/screen/formscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,18 +40,18 @@ class _MyHomePageState extends State<MyHomePage> {
         
      body: TabBarView(children: [
 
-      Container(),
+      FormScreen(),
       Container()
 
 
 
      ],
      ),
-     backgroundColor: Color.fromARGB(255, 233, 95, 141),
+     backgroundColor: Color.fromARGB(255, 239, 118, 158),
      bottomNavigationBar: TabBar(
       tabs: [
         Tab(text: "บันทึกคะแนน",),
-        Tab(text: "รายชื่อนักเรียน",)
+        Tab(text: "รายชื่อนักเรียน",) 
       ],
      ),
     
